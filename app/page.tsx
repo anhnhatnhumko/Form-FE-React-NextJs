@@ -6,11 +6,7 @@ import styles from '@/app/ui/home.module.css'
 import InvoiceStatus from "./ui/invoices/status";
 import { lusitana } from "./ui/fonts";
 
-export interface Props {
-  myName: string;
-}
-
-export default function Page({ myName = "John" }: Props) {
+export default function Page() {
   // const myName = "John";
   return (
     <main className="flex min-h-screen flex-col p-6">
@@ -25,7 +21,7 @@ export default function Page({ myName = "John" }: Props) {
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
           <p className={`${lusitana.className}text-xl text-gray-800 md:text-3xl md:leading-normal`}>
-            <strong>My name is: {myName}</strong>
+            <strong>My name is: Jhon</strong>
           </p>
           <InvoiceStatus status={"paid"} />
           <Link
